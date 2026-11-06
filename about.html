@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3d2924" />
+    <title>About Us | Spring Field International School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="about">
+    <svg
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol
+          id="flask"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M10 2v7.5L4.5 19a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 9.5V2M8.5 2h7M7 16h10"
+          />
+        </symbol>
+        <symbol
+          id="pc"
+          viewBox="0 0 24 24"
+        >
+          <path d="M3 4h18v12H3zM8 20h8M12 16v4" />
+        </symbol>
+        <symbol
+          id="book"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5zM6.5 21H20v-4"
+          />
+        </symbol>
+        <symbol
+          id="cup"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"
+          />
+        </symbol>
+        <symbol
+          id="board"
+          viewBox="0 0 24 24"
+        >
+          <path d="M3 4h18v11H3zM12 15v5M8 20h8M7 9h6" />
+        </symbol>
+        <symbol
+          id="star"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"
+          />
+        </symbol>
+        <symbol
+          id="tel"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
+          />
+        </symbol>
+        <symbol
+          id="pin"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z" />
+          <circle
+            cx="12"
+            cy="10"
+            r="2.5"
+          />
+        </symbol>
+        <symbol
+          id="mail"
+          viewBox="0 0 24 24"
+        >
+          <path d="M3 5h18v14H3zM3 7l9 6 9-6" />
+        </symbol>
+        <symbol
+          id="clock"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="9"
+          />
+          <path d="M12 7v5l3 2" />
+        </symbol>
+        <symbol
+          id="doc"
+          viewBox="0 0 24 24"
+        >
+          <path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7" />
+        </symbol>
+        <symbol
+          id="ok"
+          viewBox="0 0 24 24"
+        >
+          <path d="M5 12l5 5 9-10" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <!-- Header -->
+    <header
+      class="sticky z-50 nav"
+      style="top: env(safe-area-inset-top, 0px)"
+    >
+      <div class="topbar">
+        <div class="wrap topbar-inner">
+          <span>Welcome to Spring Field International School</span>
+          <div class="hidden sm:flex items-center gap-5">
+            <span>+92 300 0000000</span>
+            <span>info@springfield.edu.pk</span>
+            <span>English</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap h-[76px] flex items-center justify-between nav-main">
+        <a
+          href="index.html"
+          class="flex items-center gap-3"
+        >
+          <svg
+            width="42"
+            height="42"
+            viewBox="0 0 40 40"
+            aria-hidden="true"
+          >
+            <rect width="40" height="40" rx="10" fill="#7b1e2b" />
+            <path
+              d="M20 8l11 4v8c0 7-5 11-11 13-6-2-11-6-11-13v-8z"
+              fill="none"
+              stroke="#fff"
+              stroke-width="1.8"
+            />
+            <path
+              d="M14 22c3-5 7-7 13-6-2 2-3 4-3 6-3-2-6-2-10 0z"
+              fill="#fff"
+            />
+          </svg>
+          <span class="leading-tight"
+            ><b class="block text-[17px] font-semibold">Spring Field</b
+            ><span class="block text-[11px] opacity-70"
+              >International School, Faisalabad</span
+            ></span
+          >
+        </a>
+        <nav class="hidden lg:flex items-center gap-6" aria-label="Main"><a class="l" href="index.html" data-page-link="home">Home</a><a class="l" href="about.html" data-page-link="about">About Us</a><a class="l" href="academics.html" data-page-link="academics">Academics</a><a class="l" href="facilities.html" data-page-link="facilities">Facilities</a><a class="l" href="admissions.html" data-page-link="admissions">Admissions</a><a class="l" href="contact.html" data-page-link="contact">Contact Us</a><a href="application.html" class="btn b2 !py-2 !px-5">Apply Now</a></nav>
+        <button
+          id="burger"
+          class="lg:hidden p-2"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg class="i"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+        </button>
+      </div>
+      <div id="mob" class="hidden lg:hidden px-5 pb-5" style="background: var(--paper)"><div class="grid font-medium"><a class="py-3" href="index.html" data-page-link="home">Home</a><a class="py-3" href="about.html" data-page-link="about">About Us</a><a class="py-3" href="academics.html" data-page-link="academics">Academics</a><a class="py-3" href="facilities.html" data-page-link="facilities">Facilities</a><a class="py-3" href="admissions.html" data-page-link="admissions">Admissions</a><a class="py-3" href="contact.html" data-page-link="contact">Contact Us</a></div><a href="application.html" class="btn b1 w-full mt-2">Apply Now</a></div>
+    </header>
+
+    <main id="main-content">
+
+<section class="page-intro page-intro-about"><div class="wrap"><div class="page-intro-copy"><p class="eyebrow">A SCHOOL THAT FEELS LIKE A COMMUNITY</p><h1>Big hearts.<br />Bright <em>beginnings.</em></h1><p>Meet the people, purpose and values behind Spring Field.</p><a class="btn page-hero-button" href="#msgs">Meet our school <span aria-hidden="true">&#8599;</span></a></div><div class="page-intro-art" aria-hidden="true"><span class="page-intro-shape"></span><img src="assets/images/Download_premium_image_of_Young_indian_boy_happy_smile_portrait__by_Tong_about_student_image__indian_school_boy_png__indian_school_boys__indian_school_student_png__and_indian_kid_18693633-removebg-pre.png" alt="" /></div></div></section>
+    <section class="sec alt">
+      <div class="wrap">
+        <h2 class="t">Messages from our leadership</h2>
+        <div
+          class="grid md:grid-cols-2 gap-6 mt-10"
+          id="msgs"
+        ></div>
+      </div>
+    </section>
+
+    <section
+      id="achievements"
+      class="sec"
+    >
+      <div class="wrap">
+        <h2 class="t">Achievements and top students</h2>
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"
+          id="top"
+        ></div>
+      </div>
+    </section>
+
+    <section
+      id="team"
+      class="sec alt"
+    >
+      <div class="wrap">
+        <h2 class="t">Leadership and management team</h2>
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"
+          id="team-g"
+        ></div>
+      </div>
+    </section>
+
+    <section class="sec" id="history">
+      <div class="wrap grid lg:grid-cols-5 gap-10">
+        <div class="lg:col-span-2">
+          <h2 class="t">Our history</h2>
+          <p class="sub">
+            Spring Field began in 2012 as a small primary school with a few
+            classrooms and one big idea: that every child in Faisalabad deserves
+            an excellent education. Today it serves over 1,800 students from
+            Playgroup to Matric.
+          </p>
+          <div class="grid grid-cols-3 gap-3 mt-8 text-center">
+            <div class="card !p-4">
+              <b class="text-2xl text-[var(--g)]">2012</b>
+              <div class="text-xs mut">Founded</div>
+            </div>
+            <div class="card !p-4">
+              <b class="text-2xl text-[var(--g)]">1,800+</b>
+              <div class="text-xs mut">Students</div>
+            </div>
+            <div class="card !p-4">
+              <b class="text-2xl text-[var(--g)]">120+</b>
+              <div class="text-xs mut">Teachers</div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-3 grid sm:grid-cols-2 gap-6">
+          <div class="card lift">
+            <div class="ico">
+              <svg class="i"><use href="#star" /></svg>
+            </div>
+            <h3 class="text-xl font-semibold mt-5">Our vision</h3>
+            <p class="mut mt-2 text-[15px]">
+              To be the most trusted school in Punjab for nurturing curious
+              minds and principled citizens.
+            </p>
+          </div>
+          <div class="card lift">
+            <div class="ico">
+              <svg class="i"><use href="#board" /></svg>
+            </div>
+            <h3 class="text-xl font-semibold mt-5">Our mission</h3>
+            <p class="mut mt-2 text-[15px]">
+              To deliver high-quality, student-centred education in a safe
+              environment, supported by teachers who care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="sec">
+      <div class="wrap grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="t">About Spring Field</h2>
+          <p class="sub">
+            Spring Field International School is a co-educational day school in
+            Faisalabad offering Playgroup to Matric. We combine a rigorous
+            curriculum with Islamic values, caring teachers and modern
+            facilities, so every child learns with confidence.
+          </p>
+          <ul class="tick mt-6 text-[15px]">
+            <li>Established in 2012, serving families across Faisalabad</li>
+            <li>Small classes and teachers who know every child</li>
+            <li>Strong results in board examinations</li>
+          </ul>
+        </div>
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener"
+          class="relative block rounded-2xl overflow-hidden aspect-video group"
+          aria-label="Watch our school video"
+        >
+          <img
+            class="absolute inset-0 w-full h-full object-cover"
+            src="assets/hero.jpg"
+            alt=""
+          />
+          <span class="absolute inset-0 bg-black/20" aria-hidden="true"></span>
+          <span class="absolute inset-0 grid place-items-center"
+            ><span
+              class="w-20 h-20 rounded-full bg-white grid place-items-center shadow-xl transition group-hover:scale-105"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="#7b1e2b"
+              >
+                <path d="M8 5v14l11-7z" /></svg></span
+          ></span>
+          <span class="absolute left-5 bottom-4 text-white font-medium"
+            >Watch our school video</span
+          >
+        </a>
+      </div>
+    </section>
+
+    </main>
+
+    <footer
+      class="text-white py-12"
+      style="background: var(--g2)"
+    >
+      <div class="wrap flex flex-wrap justify-between gap-6 items-center">
+        <div>
+          <b class="text-xl">Spring Field International School</b>
+          <p class="text-sm opacity-80">
+            Faisalabad · Learning Today, Leading Tomorrow.
+          </p>
+        </div>
+        <nav class="flex flex-wrap gap-5 text-sm" aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="facilities.html">Facilities</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact Us</a></nav>
+      </div>
+      <div class="wrap mt-8 pt-6 border-t border-white/20 text-sm opacity-75">
+        © <span id="yr">2026</span> Spring Field International School,
+        Faisalabad. All rights reserved.
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

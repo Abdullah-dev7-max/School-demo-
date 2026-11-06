@@ -2,35 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <title>Spring Field International School, Faisalabad</title>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3d2924" />
+    <title>Home | Spring Field International School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-    <link
-      rel="stylesheet"
-      href="styles.css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles.css"
-    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <svg
       width="0"
       height="0"
@@ -136,12 +117,22 @@
     <!-- Header -->
     <header
       class="sticky z-50 nav"
-      style="top: env(safe-area-inset-top, 0px); background: var(--g)"
+      style="top: env(safe-area-inset-top, 0px)"
     >
-      <div class="wrap h-[76px] flex items-center justify-between">
+      <div class="topbar">
+        <div class="wrap topbar-inner">
+          <span>Welcome to Spring Field International School</span>
+          <div class="hidden sm:flex items-center gap-5">
+            <span>+92 300 0000000</span>
+            <span>info@springfield.edu.pk</span>
+            <span>English</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap h-[76px] flex items-center justify-between nav-main">
         <a
-          href="#home"
-          class="flex items-center gap-3 text-white"
+          href="index.html"
+          class="flex items-center gap-3"
         >
           <svg
             width="42"
@@ -149,634 +140,101 @@
             viewBox="0 0 40 40"
             aria-hidden="true"
           >
-            <rect
-              width="40"
-              height="40"
-              rx="10"
-              fill="#fff"
-            />
+            <rect width="40" height="40" rx="10" fill="#7b1e2b" />
             <path
               d="M20 8l11 4v8c0 7-5 11-11 13-6-2-11-6-11-13v-8z"
               fill="none"
-              stroke="#1F7A4D"
+              stroke="#fff"
               stroke-width="1.8"
             />
             <path
               d="M14 22c3-5 7-7 13-6-2 2-3 4-3 6-3-2-6-2-10 0z"
-              fill="#1F7A4D"
+              fill="#fff"
             />
           </svg>
           <span class="leading-tight"
             ><b class="block text-[17px] font-semibold">Spring Field</b
-            ><span class="block text-[11px] opacity-85"
+            ><span class="block text-[11px] opacity-70"
               >International School, Faisalabad</span
             ></span
           >
         </a>
-        <nav
-          class="hidden lg:flex items-center gap-8"
-          aria-label="Main"
-        >
-          <a
-            class="l"
-            href="#home"
-            >Home</a
-          ><a
-            class="l"
-            href="#about"
-            >About Us</a
-          ><a
-            class="l"
-            href="#academics"
-            >Academics</a
-          ><a
-            class="l"
-            href="#admissions"
-            >Admissions</a
-          ><a
-            class="l"
-            href="#contact"
-            >Contact Us</a
-          >
-          <a
-            href="#apply"
-            class="btn b2 !py-2 !px-5"
-            >Apply Now</a
-          >
-        </nav>
+        <nav class="hidden lg:flex items-center gap-6" aria-label="Main"><a class="l" href="index.html" data-page-link="home">Home</a><a class="l" href="about.html" data-page-link="about">About Us</a><a class="l" href="academics.html" data-page-link="academics">Academics</a><a class="l" href="facilities.html" data-page-link="facilities">Facilities</a><a class="l" href="admissions.html" data-page-link="admissions">Admissions</a><a class="l" href="contact.html" data-page-link="contact">Contact Us</a><a href="application.html" class="btn b2 !py-2 !px-5">Apply Now</a></nav>
         <button
           id="burger"
-          class="lg:hidden text-white p-2"
+          class="lg:hidden p-2"
           aria-label="Open menu"
           aria-expanded="false"
         >
           <svg class="i"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
         </button>
       </div>
-      <div
-        id="mob"
-        class="hidden lg:hidden px-5 pb-5"
-        style="background: var(--g2)"
-      >
-        <div class="grid text-white font-medium">
-          <a
-            class="py-3"
-            href="#home"
-            >Home</a
-          ><a
-            class="py-3"
-            href="#about"
-            >About Us</a
-          ><a
-            class="py-3"
-            href="#academics"
-            >Academics</a
-          ><a
-            class="py-3"
-            href="#admissions"
-            >Admissions</a
-          ><a
-            class="py-3"
-            href="#contact"
-            >Contact Us</a
-          >
-        </div>
-        <a
-          href="#apply"
-          class="btn b3 w-full mt-2"
-          >Apply Now</a
-        >
-      </div>
+      <div id="mob" class="hidden lg:hidden px-5 pb-5" style="background: var(--paper)"><div class="grid font-medium"><a class="py-3" href="index.html" data-page-link="home">Home</a><a class="py-3" href="about.html" data-page-link="about">About Us</a><a class="py-3" href="academics.html" data-page-link="academics">Academics</a><a class="py-3" href="facilities.html" data-page-link="facilities">Facilities</a><a class="py-3" href="admissions.html" data-page-link="admissions">Admissions</a><a class="py-3" href="contact.html" data-page-link="contact">Contact Us</a></div><a href="application.html" class="btn b1 w-full mt-2">Apply Now</a></div>
     </header>
 
-    <!-- Hero: to use a real photo, change --hero to url(your-image.jpg) -->
-    <section
-      id="home"
-      class="hero text-white"
-      style="min-height: min(82vh, 640px); display: flex; align-items: center"
-    >
-      <div class="wrap w-full py-24 rise">
-        <p class="font-semibold text-lg sm:text-xl">
-          Admissions open for 2026/2027
-        </p>
-        <h1 class="mt-2 text-5xl sm:text-7xl font-semibold">
-          Learning Today,<br />Leading Tomorrow.
-        </h1>
-        <p class="mt-5 text-xl sm:text-2xl font-light">
-          Since 2012 · Faisalabad
-        </p>
-        <div class="mt-9 flex flex-wrap gap-3">
-          <a
-            href="#apply"
-            class="btn b3"
-            >Apply Online</a
-          ><a
-            href="https://wa.me/923000000000?text=Assalam%20o%20Alaikum%2C%20I%20want%20admission%20details."
-            target="_blank"
-            rel="noopener"
-            class="btn b2"
-            >Chat on WhatsApp</a
-          >
+    <main id="main-content">
+      <section id="home" class="edu-hero">
+        <div class="hero-shape hero-shape-left" aria-hidden="true"></div>
+        <div class="hero-shape hero-shape-right" aria-hidden="true"></div>
+        <div class="hero-spark hero-spark-left" aria-hidden="true">&#10022;</div>
+        <div class="hero-spark hero-spark-right" aria-hidden="true">&#10022;</div>
+        <img class="kid-cutout kid-hero-left" data-optional-image src="assets/images/Download_premium_image_of_Young_indian_boy_happy_smile_portrait__by_Tong_about_student_image__indian_school_boy_png__indian_school_boys__indian_school_student_png__and_indian_kid_18693633-removebg-pre.png" alt="Spring Field student ready to learn" />
+        <img class="kid-cutout kid-hero-right" data-optional-image src="assets/images/Special_Education_Tutoring_Free_Consultation_Long_-_Special_Ed_Resource-removebg-preview.png" alt="Spring Field student smiling" />
+        <div class="edu-hero-copy">
+          <span class="mini-label"><span class="mini-dot"></span> SPRING FIELD INTERNATIONAL SCHOOL</span>
+          <h1>Little steps.<br />Big <em>bright</em> futures.</h1>
+          <p>Where curious minds find their confidence, discover what they love, and grow into who they can be.</p>
+          <div class="hero-perks"><span><b>&#10003;</b> Caring teachers</span><span><b>&#10003;</b> Playful learning</span><span><b>&#10003;</b> Admissions open</span></div>
+          <a class="btn btn-coral" href="application.html">Explore admissions <span aria-hidden="true">&#8599;</span></a>
+          <div class="hero-note"><span class="note-doodle" aria-hidden="true">&#10022;</span> Real learning for real life.<br /><b>One happy day at a time.</b></div>
         </div>
-      </div>
-    </section>
+        <div class="hero-orbit hero-orbit-left" aria-hidden="true"><span>&#9675;</span></div>
+        <div class="hero-orbit hero-orbit-right" aria-hidden="true"><span>&#9675;</span></div>
+        <a href="#school-highlights" class="scroll-cue" aria-label="Scroll to school highlights">&#8595;</a>
+      </section>
 
-    <!-- About + video -->
-    <section
-      id="about"
-      class="sec"
-    >
-      <div class="wrap grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="t">About Spring Field</h2>
-          <p class="sub">
-            Spring Field International School is a co-educational day school in
-            Faisalabad offering Playgroup to Matric. We combine a rigorous
-            curriculum with Islamic values, caring teachers and modern
-            facilities, so every child learns with confidence.
-          </p>
-          <ul class="tick mt-6 text-[15px]">
-            <li>Established in 2012, serving families across Faisalabad</li>
-            <li>Small classes and teachers who know every child</li>
-            <li>Strong results in board examinations</li>
-          </ul>
+      <section class="numbers-strip" id="school-highlights" aria-label="School highlights">
+        <div class="number-item"><span class="number-icon number-coral" aria-hidden="true">&#10022;</span><div><strong>Since 2012</strong><small>Growing with Faisalabad</small></div></div>
+        <div class="number-item"><span class="number-icon number-yellow" aria-hidden="true">&#9812;</span><div><strong>1,800+</strong><small>Curious students</small></div></div>
+        <div class="number-item"><span class="number-icon number-green" aria-hidden="true">&#9635;</span><div><strong>120+</strong><small>Dedicated teachers</small></div></div>
+        <span class="strip-doodle" aria-hidden="true">&#8599;</span>
+      </section>
+
+      <section class="home-section activity-section" id="school-life">
+        <div class="section-heading heading-inline"><div><span class="mini-label">LEARN BY DOING</span><h2>Smart, kind kids<br />ready to <em>soar!</em></h2></div><div class="heading-side"><p>Every day brings a new idea, a new friend and a new reason to be curious.</p><a class="text-link" href="academics.html">Discover our programs <span aria-hidden="true">&#8599;</span></a></div></div>
+        <div class="activity-grid">
+          <a class="activity-card activity-orange" href="academics.html"><span class="activity-kicker">CELEBRATE EVERY MILESTONE</span><strong>Big dreams<br />start here</strong><img class="photo-white-background" data-optional-image src="assets/images/download-removebg-preview.jpg" alt="Student celebrating a learning milestone" /><span class="activity-scribble" aria-hidden="true">&#8767;</span></a>
+          <a class="activity-card activity-green" href="facilities.html"><span class="activity-kicker">MAKE AND IMAGINE</span><strong>Big ideas<br />start small</strong><img data-optional-image src="assets/images/Did_someone_say_back_to_school____We_make_back-to-school_custom_tees_easy_with_customizable_templates_you_can_edit_for_your_classroom_or_youth_group____Do_you_or_your_students_have_a_fun_t-shirt_idea_.png" alt="Student exploring a creative project" /><span class="activity-scribble" aria-hidden="true">&#8767;</span></a>
+          <a class="activity-card activity-blue" href="academics.html"><span class="activity-kicker">GROW WITH US</span><strong>Find your<br />own bright way</strong><img data-optional-image src="assets/images/Become_a_Teacher_in_Ohio___Ohio_Teacher_Certification___American_Board-removebg-preview.png" alt="Student ready for a school day" /><span class="activity-scribble" aria-hidden="true">&#8767;</span></a>
         </div>
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener"
-          class="relative block rounded-2xl overflow-hidden aspect-video group"
-          style="background: linear-gradient(135deg, #1f7a4d, #6fbf93)"
-          aria-label="Watch our school video"
-        >
-          <span class="absolute inset-0 grid place-items-center"
-            ><span
-              class="w-20 h-20 rounded-full bg-white grid place-items-center shadow-xl transition group-hover:scale-105"
-              ><svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="#1F7A4D"
-              >
-                <path d="M8 5v14l11-7z" /></svg></span
-          ></span>
-          <span class="absolute left-5 bottom-4 text-white font-medium"
-            >Watch our school video</span
-          >
-        </a>
-      </div>
-    </section>
+      </section>
 
-    <!-- Messages -->
-    <section class="sec alt">
-      <div class="wrap">
-        <h2 class="t">Messages from our leadership</h2>
-        <div
-          class="grid md:grid-cols-2 gap-6 mt-10"
-          id="msgs"
-        ></div>
-      </div>
-    </section>
-
-    <!-- History, vision, mission -->
-    <section class="sec">
-      <div class="wrap grid lg:grid-cols-5 gap-10">
-        <div class="lg:col-span-2">
-          <h2 class="t">Our history</h2>
-          <p class="sub">
-            Spring Field began in 2012 as a small primary school with a few
-            classrooms and one big idea: that every child in Faisalabad deserves
-            an excellent education. Today it serves over 1,800 students from
-            Playgroup to Matric.
-          </p>
-          <div class="grid grid-cols-3 gap-3 mt-8 text-center">
-            <div class="card !p-4">
-              <b class="text-2xl text-[var(--g)]">2012</b>
-              <div class="text-xs mut">Founded</div>
-            </div>
-            <div class="card !p-4">
-              <b class="text-2xl text-[var(--g)]">1,800+</b>
-              <div class="text-xs mut">Students</div>
-            </div>
-            <div class="card !p-4">
-              <b class="text-2xl text-[var(--g)]">120+</b>
-              <div class="text-xs mut">Teachers</div>
-            </div>
-          </div>
+      <section class="home-section program-section" id="programs">
+        <div class="center-heading"><span class="mini-label">A PLACE FOR EVERY KIND OF CURIOUS</span><h2>Making room for<br /><em>every possibility.</em></h2><p>Supportive programs help every learner build skills, confidence and a love of discovery.</p></div>
+        <div class="program-grid">
+          <a class="program-card" href="academics.html"><span class="program-art art-sky"><img data-optional-image src="assets/images/https___padlet_com_sanjeevji_best-astrologer-in-melbourne-j0mr5r6rkk6wqr6u_wish_Ae2RavorNJLzQnz4-removebg-preview.png" alt="Preschool learner" /></span><b>Early learning</b><small>Playgroup &middot; Nursery &middot; Prep</small></a>
+          <a class="program-card" href="academics.html"><span class="program-art art-peach"><img data-optional-image src="assets/images/Special_Education_Tutoring_Free_Consultation_Long_-_Special_Ed_Resource-removebg-preview.png" alt="Primary student reading" /></span><b>Primary years</b><small>Grades 1&ndash;5</small></a>
+          <a class="program-card" href="academics.html"><span class="program-art art-mint"><img data-optional-image src="assets/images/Polegar_Se_Para_Estudantes_Com_Livros_E_Mochila_PNG___Realista__Estudante__Afirmativo_PNG_Imagem_para_download_gratuito-removebg-preview.png" alt="Middle school student" /></span><b>Middle school</b><small>Grades 6&ndash;8</small></a>
+          <a class="program-card" href="academics.html"><span class="program-art art-sun"><img class="photo-white-background" data-optional-image src="assets/images/download-removebg-preview.jpg" alt="Matric student celebrating an achievement" /></span><b>Matric</b><small>Grades 9&ndash;10</small></a>
         </div>
-        <div class="lg:col-span-3 grid sm:grid-cols-2 gap-6">
-          <div class="card lift">
-            <div class="ico">
-              <svg class="i"><use href="#star" /></svg>
-            </div>
-            <h3 class="text-xl font-semibold mt-5">Our vision</h3>
-            <p class="mut mt-2 text-[15px]">
-              To be the most trusted school in Punjab for nurturing curious
-              minds and principled citizens.
-            </p>
-          </div>
-          <div class="card lift">
-            <div class="ico">
-              <svg class="i"><use href="#board" /></svg>
-            </div>
-            <h3 class="text-xl font-semibold mt-5">Our mission</h3>
-            <p class="mut mt-2 text-[15px]">
-              To deliver high-quality, student-centred education in a safe
-              environment, supported by teachers who care.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Academics -->
-    <section
-      id="academics"
-      class="sec alt"
-    >
-      <div class="wrap">
-        <h2 class="t">Academic levels and programs</h2>
-        <p class="sub">
-          Four stages, each with a clear focus, taught by qualified and trained
-          teachers.
-        </p>
-        <div
-          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"
-          id="levels"
-        ></div>
-        <h3 class="text-xl font-semibold mt-14">Classes offered</h3>
-        <div
-          class="flex flex-wrap gap-2 mt-4"
-          id="classes"
-        ></div>
-      </div>
-    </section>
+      <section class="home-section promise-section">
+        <a class="promise-card promise-yellow" href="about.html"><span class="mini-label">CONFIDENCE THAT LASTS</span><strong>Helping every child<br />find their <em>shine.</em></strong><small>Discover a school where every small win matters.</small><span class="promise-button">Meet our school <b aria-hidden="true">&#8599;</b></span><img class="photo-white-background" data-optional-image src="assets/images/download-removebg-preview.jpg" alt="Confident student celebrating a school achievement" /><span class="sun-mark" aria-hidden="true">&#10022;</span></a>
+        <a class="promise-card promise-coral" href="academics.html"><span class="mini-label">ROOM TO DREAM BIG</span><strong>Curiosity today.<br />Possibility <em>tomorrow.</em></strong><small>Good questions can take you anywhere.</small><span class="promise-button">See how we learn <b aria-hidden="true">&#8599;</b></span><img data-optional-image src="assets/images/Polegar_Se_Para_Estudantes_Com_Livros_E_Mochila_PNG___Realista__Estudante__Afirmativo_PNG_Imagem_para_download_gratuito-removebg-preview.png" alt="Student with books looking confidently ahead" /><span class="kite-mark" aria-hidden="true">&#10022;</span></a>
+      </section>
 
-    <!-- Facilities -->
-    <section
-      id="facilities"
-      class="sec"
-    >
-      <div class="wrap">
-        <h2 class="t">Campus facilities</h2>
-        <div
-          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10"
-          id="fac"
-        ></div>
-        <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8"
-          id="gal"
-        ></div>
-      </div>
-    </section>
+      <section class="home-section future-section" id="our-approach">
+        <div class="future-copy"><span class="pill-label">LEARNING THAT GOES FURTHER</span><h2>Empower your kids<br />to think <em>bigger</em><br />and reach higher.</h2><p>Encouraging children to ask questions, think creatively and solve problems gives them a strong start for whatever comes next.</p><a class="btn btn-coral" href="about.html">Our approach <span aria-hidden="true">&#8599;</span></a><span class="curved-arrow" aria-hidden="true">&#10551;</span></div>
+        <div class="future-art"><span class="future-shape"></span><img data-optional-image src="assets/images/Special_Education_Tutoring_Free_Consultation_Long_-_Special_Ed_Resource-removebg-preview.png" alt="Student holding a book and smiling" /><span class="tiny-planet" aria-hidden="true">&#10022;</span><div class="future-stat"><span>&#10003;</span><div><b>Every learner matters</b><small>Encouraged to find their own way</small></div><i></i><div><b>One community</b><small>Families and teachers, together</small></div></div></div>
+      </section>
 
-    <!-- Affiliation -->
-    <section
-      id="affiliation"
-      class="sec alt"
-    >
-      <div class="wrap grid lg:grid-cols-2 gap-10">
-        <div>
-          <h2 class="t">Affiliation details</h2>
-          <ul class="tick mt-6 text-[15px]">
-            <li><b>Board:</b> Affiliated with BISE Faisalabad (Matric)</li>
-            <li>
-              <b>Registration:</b> Registered with the Punjab School Education
-              Department
-            </li>
-            <li><b>Registration no.:</b> [add number]</li>
-            <li><b>Affiliation no.:</b> [add number]</li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="t">School proof</h2>
-          <p class="sub">Official documents available for parents to view.</p>
-          <div
-            class="grid grid-cols-3 gap-3 mt-6"
-            id="proof"
-          ></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements -->
-    <section
-      id="achievements"
-      class="sec"
-    >
-      <div class="wrap">
-        <h2 class="t">Achievements and top students</h2>
-        <div
-          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"
-          id="top"
-        ></div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section
-      id="team"
-      class="sec alt"
-    >
-      <div class="wrap">
-        <h2 class="t">Leadership and management team</h2>
-        <div
-          class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10"
-          id="team-g"
-        ></div>
-      </div>
-    </section>
-
-    <!-- Admissions -->
-    <section
-      id="admissions"
-      class="sec"
-    >
-      <div class="wrap">
-        <h2 class="t">Admissions 2026/2027</h2>
-        <p class="sub">Everything you need to know before you apply.</p>
-        <div class="grid lg:grid-cols-2 gap-6 mt-10">
-          <div class="card">
-            <h3 class="text-xl font-semibold">Age criteria</h3>
-            <div class="mt-4 overflow-x-auto">
-              <table>
-                <tr>
-                  <th>Class</th>
-                  <th>Minimum age</th>
-                </tr>
-                <tbody id="age"></tbody>
-              </table>
-            </div>
-            <p class="text-xs mut mt-3">
-              Age is counted as on 1 April of the admission year.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold">Eligibility requirements</h3>
-            <ul class="tick text-[15px]">
-              <li>Child meets the minimum age for the class</li>
-              <li>Entry assessment and interview for Grade 1 and above</li>
-              <li>Previous school report card and result</li>
-              <li>School leaving certificate for transfer students</li>
-              <li>Parent or guardian meeting with admissions office</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold">Required documents</h3>
-            <ul class="tick text-[15px]">
-              <li>Copy of child’s B-Form or birth certificate</li>
-              <li>Copy of father’s and mother’s CNIC</li>
-              <li>Four recent passport-size photographs</li>
-              <li>Previous school leaving certificate and report card</li>
-              <li>Immunisation card (Playgroup to Prep)</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold">Fee plans and policies</h3>
-            <div class="mt-4 overflow-x-auto">
-              <table>
-                <tr>
-                  <th>Level</th>
-                  <th>Admission</th>
-                  <th>Monthly</th>
-                </tr>
-                <tbody id="fee"></tbody>
-              </table>
-            </div>
-            <ul class="tick text-[14px] mut">
-              <li>Monthly fee is due by the 10th of each month</li>
-              <li>10% sibling discount from the second child</li>
-              <li>Merit scholarships for top performers</li>
-              <li>One month’s notice required for withdrawal</li>
-            </ul>
-            <p class="text-xs mut mt-3">
-              Sample figures. Replace with the school’s approved fee schedule.
-            </p>
-          </div>
-        </div>
-        <div
-          class="mt-10 rounded-2xl p-7 sm:p-10 grid lg:grid-cols-5 gap-10"
-          style="background: var(--lt)"
-          id="apply"
-        >
-          <div class="lg:col-span-2">
-            <h3 class="text-2xl font-semibold">Apply online</h3>
-            <p class="mut mt-3">
-              Send your details and our admissions office will call you within
-              one working day.
-            </p>
-            <div class="mt-6 space-y-3 text-[15px]">
-              <p class="flex gap-3">
-                <svg class="i text-[var(--g)] shrink-0"><use href="#tel" /></svg
-                >Admission office: 041-000 0000
-              </p>
-              <p class="flex gap-3">
-                <svg class="i text-[var(--g)] shrink-0"><use href="#tel" /></svg
-                >WhatsApp: 0300 0000000
-              </p>
-            </div>
-            <a
-              href="https://wa.me/923000000000?text=Assalam%20o%20Alaikum%2C%20I%20want%20admission%20details."
-              target="_blank"
-              rel="noopener"
-              class="btn b1 mt-6"
-              >Message on WhatsApp</a
-            >
-          </div>
-          <div class="lg:col-span-3 card shadow-lg">
-            <form
-              id="adm"
-              novalidate
-            >
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    for="sn"
-                    class="text-sm font-medium"
-                    >Student name</label
-                  ><input
-                    id="sn"
-                    class="field mt-1"
-                    placeholder="Child’s full name"
-                  />
-                </div>
-                <div>
-                  <label
-                    for="gr"
-                    class="text-sm font-medium"
-                    >Class applying for</label
-                  ><select
-                    id="gr"
-                    class="field mt-1"
-                  >
-                    <option value="">Select class</option>
-                  </select>
-                </div>
-                <div>
-                  <label
-                    for="gn"
-                    class="text-sm font-medium"
-                    >Guardian name</label
-                  ><input
-                    id="gn"
-                    class="field mt-1"
-                    placeholder="Parent or guardian"
-                  />
-                </div>
-                <div>
-                  <label
-                    for="ph"
-                    class="text-sm font-medium"
-                    >Phone number</label
-                  ><input
-                    id="ph"
-                    class="field mt-1"
-                    inputmode="tel"
-                    placeholder="0300 1234567"
-                  />
-                </div>
-                <div class="sm:col-span-2">
-                  <label
-                    for="ad"
-                    class="text-sm font-medium"
-                    >Home address</label
-                  ><textarea
-                    id="ad"
-                    rows="3"
-                    class="field mt-1"
-                    placeholder="House, street, area, Faisalabad"
-                  ></textarea>
-                </div>
-              </div>
-              <p
-                id="err"
-                class="hidden text-sm mt-4"
-                style="color: #b91c1c"
-                role="alert"
-              ></p>
-              <button
-                class="btn b1 w-full mt-5 !py-3.5"
-                type="submit"
-              >
-                Submit application
-              </button>
-            </form>
-            <div
-              id="done"
-              class="hidden text-center py-8"
-              role="status"
-            >
-              <div
-                class="w-14 h-14 rounded-full mx-auto grid place-items-center text-white"
-                style="background: var(--g)"
-              >
-                <svg
-                  class="i"
-                  style="stroke-width: 2.6"
-                >
-                  <use href="#ok" />
-                </svg>
-              </div>
-              <h3 class="text-2xl font-semibold mt-5">Application received</h3>
-              <p
-                id="dt"
-                class="mut mt-2"
-              ></p>
-              <button
-                id="again"
-                class="btn mt-6 border"
-                style="border-color: var(--line)"
-              >
-                Submit another
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section
-      id="contact"
-      class="sec alt"
-    >
-      <div class="wrap">
-        <h2 class="t">Contact us</h2>
-        <div class="grid lg:grid-cols-2 gap-6 mt-10">
-          <div class="card space-y-5 text-[15px]">
-            <p class="flex gap-4">
-              <svg class="i text-[var(--g)] shrink-0 mt-1">
-                <use href="#pin" /></svg
-              ><span
-                ><b>Address</b><br /><span class="mut"
-                  >Spring Field International School, Main Campus, [Street /
-                  Road], Faisalabad, Punjab 38000, Pakistan</span
-                ></span
-              >
-            </p>
-            <p class="flex gap-4">
-              <svg class="i text-[var(--g)] shrink-0 mt-1">
-                <use href="#tel" /></svg
-              ><span
-                ><b>Admission office</b><br /><span class="mut"
-                  >041-000 0000 · WhatsApp 0300 0000000</span
-                ></span
-              >
-            </p>
-            <p class="flex gap-4">
-              <svg class="i text-[var(--g)] shrink-0 mt-1">
-                <use href="#mail" /></svg
-              ><span
-                ><b>Official email</b><br /><span class="mut"
-                  >info@springfield.edu.pk<br />admissions@springfield.edu.pk</span
-                ></span
-              >
-            </p>
-            <p class="flex gap-4">
-              <svg class="i text-[var(--g)] shrink-0 mt-1">
-                <use href="#clock" /></svg
-              ><span
-                ><b>Operating hours</b><br /><span class="mut"
-                  >Monday to Friday 8:00 am to 2:30 pm<br />Saturday 8:00 am to
-                  12:30 pm · Office: 8:00 am to 4:00 pm</span
-                ></span
-              >
-            </p>
-            <div
-              class="flex gap-3 pt-2"
-              id="soc"
-            ></div>
-          </div>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Spring+Field+International+School+Faisalabad"
-            target="_blank"
-            rel="noopener"
-            class="rounded-2xl min-h-[320px] grid place-items-center text-center p-6 border lift"
-            style="
-              border-color: var(--line);
-              background: repeating-linear-gradient(
-                45deg,
-                #e4f3ea,
-                #e4f3ea 16px,
-                #eef8f2 16px,
-                #eef8f2 32px
-              );
-            "
-          >
-            <span
-              ><span
-                class="w-16 h-16 rounded-full mx-auto grid place-items-center text-white"
-                style="background: var(--g)"
-                ><svg class="i !w-8 !h-8"><use href="#pin" /></svg></span
-              ><b class="block mt-4 text-lg">Find us on Google Maps</b
-              ><span class="mut text-sm"
-                >Tap to open our location pin</span
-              ></span
-            ></a
-          >
-        </div>
-      </div>
-    </section>
+      <section class="home-section event-section" id="school-community">
+        <div class="event-photo"><img data-optional-image src="assets/hero.jpg" alt="Spring Field school campus" /><span class="event-photo-mark" aria-hidden="true">&#10022;</span></div>
+        <div class="event-copy"><span class="pill-label">A NOTE FROM OUR SCHOOL</span><h2>Growing curious minds,<br />one day at a time.</h2><p>At Spring Field, school is a partnership between children, families and teachers. Come and see how your child can flourish here.</p><a class="event-link" href="contact.html"><span aria-hidden="true">&#8599;</span> Plan a campus visit</a></div>
+        <div class="event-doodle" aria-hidden="true"><svg viewBox="0 0 120 100" fill="none"><path d="M22 75c20-12 8-34 23-45 11-8 19 6 14 15-6 10-19 2-12-7M68 72c11-15 18-31 31-37M84 38l16-3-3 15M64 77l8 13m0-13-8 13" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="28" cy="28" r="5" fill="currentColor"/><circle cx="100" cy="74" r="4" fill="currentColor"/></svg></div>
+      </section>
+    </main>
 
     <footer
       class="text-white py-12"
@@ -789,16 +247,14 @@
             Faisalabad · Learning Today, Leading Tomorrow.
           </p>
         </div>
-        <div class="flex gap-5 text-sm">
-          <a href="#home">Home</a><a href="#about">About Us</a
-          ><a href="#admissions">Admissions</a><a href="#contact">Contact Us</a>
-        </div>
+        <nav class="flex flex-wrap gap-5 text-sm" aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="facilities.html">Facilities</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact Us</a></nav>
       </div>
       <div class="wrap mt-8 pt-6 border-t border-white/20 text-sm opacity-75">
         © <span id="yr">2026</span> Spring Field International School,
         Faisalabad. All rights reserved.
       </div>
     </footer>
+
 
     <script src="script.js"></script>
   </body>
